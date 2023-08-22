@@ -1,5 +1,7 @@
 <?php
 
+include '../Connection/connect.php';
+
 session_start();
 
     if (!isset($_SESSION['username'])) 
@@ -23,6 +25,30 @@ session_start();
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!--Latest/Update Kit Fontawesome-->
   <script src="https://kit.fontawesome.com/acd6544335.js" crossorigin="anonymous"></script>
+
+  <style type="text/css">
+        .btn 
+        {
+            padding: 5px;
+            text-decoration: none;
+        }
+
+        .btn-danger
+        {
+            background-color: lightcoral;
+        }
+
+        .btn-primary
+        {
+            background-color: lightskyblue;
+        }
+        .text-light
+        {
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+
 </head>
 
 
@@ -49,7 +75,7 @@ session_start();
 	<div class="col-div-6">
 	<div class="profile">
 
-		<img src="Chanel.jpg" class="pro-img" />
+		<img src="../Content/Chanel.jpg" class="pro-img" />
 		<p>Chanel<span>Pawministrator</span></p>
 	</div>
 
@@ -80,6 +106,59 @@ $(".nav2").click(function(){
  });
 
 </script>
+
+<div class="container">
+        <button class="btn btn-primary"><a href="#" class="text-light">Add Client</a>
+        </button>
+    <table class="table">
+    <thead>
+        <tr>
+        <th scope="col">id #</th>
+        <th scope="col">Patient Name</th>
+        <th scope="col">Patient Age</th>
+        <th scope="col">Date of Surgery</th>
+        <th scope="col">Time of Surgery</th>
+        <th scope="col">Type of Surgery</th>
+        <th scope="col">Contact no.</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php
+        
+        $sql="select * from surgery"; //this selects all the data from mysql table with the table name surgery
+        $result=mysqli_query($con,$sql); //this selects the data from the table
+        if ($result) {
+            /*This will print all the data available in the database*/
+            while ($row=mysqli_fetch_assoc($result)) {
+                $id=$row['id'];
+                $petName=$row['petName'];
+                $petAge=$row['petAge'];
+                $dateofsurgery=$row['dateofsurgery'];
+                $timeofsurgery=$row['timeofsurgery'];
+                $typeofsurgery=$row['typeofsurgery'];
+                $phone=$row['phone'];
+        
+                /* This is the data for the whole table */
+                echo '<tr>
+                <th scope="row">'.$id.'</th> 
+                <td>'.$petName.'</td>
+                <td>'.$petAge.'</td>
+                <td>'.$dateofsurgery.'</td>
+                <td>'.$timeofsurgery.'</td>
+                <td>'.$typeofsurgery.'</td>
+                <td>'.$phone.'</td>
+                <td>
+                <button class="btn btn-primary"><a href="#? updateid='.$id.'" class="text-light">Update</a></button>
+                <button class="btn btn-danger" ><a href="#? deleteid='.$id.'" class="text-light">Delete</a></button>
+                </td>
+                </tr>';
+            }
+        }
+        ?>
+        
+    </tbody>
+    </table>
+    </div>                 
 
 </body>
 

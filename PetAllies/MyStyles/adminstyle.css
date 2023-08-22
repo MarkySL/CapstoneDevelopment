@@ -213,3 +213,7 @@ td, th {
   font-weight: 700;
   font-size: 2em;
 }
+
+.surgerytb{
+  display: inline-block;
+}
