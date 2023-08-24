@@ -22,7 +22,7 @@ if (!isset($_SESSION['username'])) {
     <link rel="stylesheet" href="../MyStyles/adminstyle.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Latest/Update Kit Fontawesome-->
-    <script src="../Javascripts/fontawesome.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/acd6544335.js" crossorigin="anonymous"></script>
 
     <style type="text/css">
         .btn 
@@ -54,8 +54,8 @@ if (!isset($_SESSION['username'])) {
     <div id="mySidenav" class="sidenav">
         <p class="logo"><span>P</span>et-Allies</p>
         <a href="../Content/admin.php" class="icon-a"><i class="fa fa-dashboard icons"></i> &nbsp;&nbsp;Dashboard</a>
-        <a href="petinfodisplay.php"class="icon-a"><i class="fa-solid fa-paw icons"></i> &nbsp;&nbsp;Consultation</a>
-        <a href="../Surgery/surgery.php"class="icon-a"><i class="fa-solid fa-staff-snake icons"></i> &nbsp;&nbsp;Surgery</a>
+        <a href="petinfodisplay.php"class="icon-a"><i class="fa-solid fa-paw icons"></i> &nbsp;&nbsp;Pet Information</a>
+        <a href="../PetMonitoring/monitoring.php"class="icon-a"><i class="fa-solid fa-staff-snake icons"></i> &nbsp;&nbsp;Pet Monitoring</a>
         <a href="../SalesRep/monthlySR.php"class="icon-a"><i class="fa-solid fa-money-bill icons"></i> &nbsp;&nbsp;Sales Report</a>
         <a href="../Inventory/inventory.php"class="icon-a"><i class="fa fa-tasks icons"></i> &nbsp;&nbsp;Inventory</a>
         <a href="../Login/logout.php" class="icon-a"><i class="fa fa-user icons"></i> &nbsp;&nbsp;Logout</a>
@@ -76,7 +76,7 @@ if (!isset($_SESSION['username'])) {
                     <p>Chanel<span>Pawministrator</span></p>
                 </div>
 
-                <script src="../Javascripts/navigationclick.js"></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
                 <script>
                     $(".nav").click(function() {
                         $("#mySidenav").css('width', '70px');
@@ -110,7 +110,7 @@ if (!isset($_SESSION['username'])) {
     <table class="table">
     <thead>
         <tr>
-        <th scope="col">id #</th>
+        <th scope="col">#</th>
         <th scope="col">Owner</th>
         <th scope="col">Phone</th>
         <th scope="col">Address</th>
