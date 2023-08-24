@@ -1,0 +1,55 @@
+Creating a website layout that automatically adjusts when the browser window is split (for example, when using a split-screen view) involves using responsive design techniques in CSS. To achieve this, you can use media queries and flexible layout techniques like flexbox or grid. Here's a general guide on how to achieve this:
+
+1. **Viewport Meta Tag:**
+   Make sure your HTML includes the viewport meta tag in the `<head>` section. This tag helps the browser understand how to render the content on different devices.
+
+   ```html
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   ```
+
+2. **Use CSS Media Queries:**
+   Media queries allow you to apply different CSS styles based on the screen width. You can define breakpoints where your layout will change to accommodate different screen sizes.
+
+   ```css
+   /* Default styles for larger screens */
+   .container {
+     display: flex;
+   }
+
+   /* Media query for smaller screens */
+   @media (max-width: 768px) {
+     .container {
+       flex-direction: column;
+     }
+   }
+   ```
+
+   In the example above, the layout uses flexbox for larger screens and switches to a column layout for screens with a maximum width of 768px.
+
+3. **Flexbox or Grid Layout:**
+   Use flexible layout techniques like flexbox or grid to create a responsive and adaptable layout. These layout models automatically adjust the placement and sizing of elements within a container.
+
+   ```css
+   .container {
+     display: flex;
+     flex-direction: row;
+   }
+
+   .item {
+     flex: 1;
+   }
+   ```
+
+   In this example, the `.container` is a flex container with a row layout, and the `.item` elements will take up equal space within it.
+
+4. **Fluid Images:**
+   Images should also be responsive. Use the `max-width: 100%` property to ensure that images don't overflow their parent containers and remain within the bounds of the viewport.
+
+   ```css
+   img {
+     max-width: 100%;
+     height: auto;
+   }
+   ```
+
+Remember that these are general guidelines, and you should adapt them to your specific website structure and design. Test your website on various devices and screen sizes to ensure that it looks and functions as intended. Additionally, consider using CSS frameworks like Bootstrap or Foundation that come with built-in responsive features to streamline the process.
