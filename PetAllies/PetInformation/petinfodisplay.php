@@ -20,10 +20,27 @@ if (!isset($_SESSION['username'])) {
 <head>
     <title></title>
     <link rel="stylesheet" href="../MyStyles/adminstyle.css" type="text/css" />
+    <!--Bootstrap CDN CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Boostrap CDN Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <!--Latest/Update Kit Fontawesome-->
     <script src="https://kit.fontawesome.com/acd6544335.js" crossorigin="anonymous"></script>
+    <!--Ajax JQuery Script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!--AJAX Script to filter the datas in the table-->
+    <script>
+        $(document).ready(function(){
+            $("#search-input").on("keyup",function(){
+                var value = $(this).val().toLowerCase();
+                //This creates a variable for filtering of records
+                $("#myTable tr").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
     <style type="text/css">
         .btn
         {
@@ -31,14 +48,20 @@ if (!isset($_SESSION['username'])) {
             text-decoration: none;
         }
 
-        .container .btn-primary{
+        .btn-primary{
             float: right;
+            margin-right: 50px;
         }
 
         .text-light
         {
             text-decoration: none;
             
+        }
+
+        .search-function{
+            padding: 5px;
+            box-shadow: 0px 5px 10px black;
         }
     </style>
 </head>
@@ -60,8 +83,8 @@ if (!isset($_SESSION['username'])) {
 
         <div class="head">
             <div class="col-div-6">
-                <span style="font-size:30px;cursor:pointer; color: white;" class="nav">&#9776; Dashboard</span>
-                <span style="font-size:30px;cursor:pointer; color: white;" class="nav2">&#9776; Dashboard</span>
+                <span style="font-size:30px;cursor:pointer; color: white;" class="nav">Dashboard</span>
+                <span style="font-size:30px;cursor:pointer; color: white;" class="nav2">Dashboard</span>
             </div>
 
             <div class="col-div-6">
@@ -70,7 +93,7 @@ if (!isset($_SESSION['username'])) {
                     <img src="../Content/Chanel.jpg" class="pro-img" />
                     <p>Chanel<span>Pawministrator</span></p>
                 </div>
-
+                <!-- For Navigation Bar Functionalities
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
                 <script>
                     $(".nav").click(function() {
@@ -96,11 +119,14 @@ if (!isset($_SESSION['username'])) {
                         $(".nav2").css('display', 'none');
                     });
                 </script>
+                -->
         </div>
     </div>
     
     <div class="container">
         <button class="btn btn-primary"><a href="petinfo.php" class="text-light">Add Client</a></button>
+        <input type="text" class="search-function" placeholder="Seach Client...." id="search-input">
+    </div>
     <table class="table">
     <thead>
         <tr>
@@ -117,7 +143,7 @@ if (!isset($_SESSION['username'])) {
         <th scope="col">Modify</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody id="myTable"> <!--Declare the Id for Search Function-->
         <?php
         
         $sql="select * from `petinfo`"; //this selects all the data from mysql table with the table name petinfo
@@ -159,7 +185,11 @@ if (!isset($_SESSION['username'])) {
     </tbody>
     </table>
     </div>                 
-
+    
+    <!---Javascript for Seach Function-->
+    <script>
+       
+    </script>
 </body>
 
 </html>
