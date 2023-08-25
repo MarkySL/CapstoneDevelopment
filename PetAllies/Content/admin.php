@@ -18,6 +18,7 @@ session_start();
 <head>
 	<title></title>
 	<link rel="stylesheet" href="../MyStyles/adminstyle.css" type="text/css"/>
+  <!--Boostrap CDN-->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   <!--Latest/Update Kit Fontawesome-->
   <script src="https://kit.fontawesome.com/acd6544335.js" crossorigin="anonymous"></script>
@@ -85,7 +86,7 @@ session_start();
       <div class="col-div-8">
           <div class="box-8">
             <div class="content-box">
-                <p>Updated List Clients <span>See All</span></p>
+                <p>Updated List Clients <a href="../PetInformation/petinfodisplay.php"><span>See All</span></a></p>
                 <br/>
                 <table>
                   <tr>

@@ -25,25 +25,20 @@ if (!isset($_SESSION['username'])) {
     <script src="https://kit.fontawesome.com/acd6544335.js" crossorigin="anonymous"></script>
 
     <style type="text/css">
-        .btn 
+        .btn
         {
             padding: 5px;
             text-decoration: none;
         }
 
-        .btn-danger
-        {
-            background-color: lightcoral;
+        .container .btn-primary{
+            float: right;
         }
 
-        .btn-primary
-        {
-            background-color: lightskyblue;
-        }
         .text-light
         {
             text-decoration: none;
-            color: #fff;
+            
         }
     </style>
 </head>
@@ -105,8 +100,7 @@ if (!isset($_SESSION['username'])) {
     </div>
     
     <div class="container">
-        <button class="btn btn-primary"><a href="petinfo.php" class="text-light">Add Client</a>
-        </button>
+        <button class="btn btn-primary"><a href="petinfo.php" class="text-light">Add Client</a></button>
     <table class="table">
     <thead>
         <tr>
@@ -154,7 +148,7 @@ if (!isset($_SESSION['username'])) {
                 <td>'.$breed.'</td>
                 <td>'.$cmarkings.'</td>
                 <td>
-                <button class="btn btn-primary"><a href="update.php? updateid='.$id.'" class="text-light">Update</a></button>
+                <button class="btn btn-success"><a href="update.php? updateid='.$id.'" class="text-light">Update</a></button>
                 <button class="btn btn-danger" ><a href="delete.php? deleteid='.$id.'" class="text-light">Delete</a></button>
                 </td>
                 </tr>';
