@@ -18,12 +18,11 @@ if (!isset($_SESSION['username'])) {
 <html>
 
 <head>
-    <title></title>
     <link rel="stylesheet" href="../MyStyles/adminstyle.css" type="text/css" />
-    <!--Bootstrap CDN CSS-->
+    <!--Fontawesome CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--Boostrap CDN Javascript-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <!--Bootstrap CDN CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!--Latest/Update Kit Fontawesome-->
     <script src="https://kit.fontawesome.com/acd6544335.js" crossorigin="anonymous"></script>
     <!--Ajax JQuery Script-->
@@ -63,6 +62,7 @@ if (!isset($_SESSION['username'])) {
             padding: 5px;
             box-shadow: 0px 5px 10px black;
         }
+
     </style>
 </head>
 
@@ -125,7 +125,7 @@ if (!isset($_SESSION['username'])) {
     
     <div class="container">
         <button class="btn btn-primary"><a href="petinfo.php" class="text-light">Add Client</a></button>
-        <input type="text" class="search-function" placeholder="Seach Client...." id="search-input">
+        <input type="text" class="search-function" placeholder="Search Client...." id="search-input">
     </div>
     <table class="table">
     <thead>

@@ -88,7 +88,12 @@ body{
 .nav2{
 	display: none;
 }
-
+.info-table{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  
+}
 .content
 {
     margin-left: 50px;

@@ -56,6 +56,6 @@ if ($data==false)
 
             header("location:login.php");
         }
-    } //How to input strings only in c++?
+    } 
 
 ?> 

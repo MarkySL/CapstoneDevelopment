@@ -40,8 +40,8 @@ session_start();
 
 	    <div class="head">
 		    <div class="col-div-6">
-        <span style="font-size:30px;cursor:pointer; color: white;" class="nav"  >Dashboard</span>
-        <span style="font-size:30px;cursor:pointer; color: white;" class="nav2"  >Dashboard</span>
+        <span style="font-size:30px;cursor:pointer; color: white;" class="nav">Dashboard</span>
+        <span style="font-size:30px;cursor:pointer; color: white;" class="nav2">Dashboard</span>
       </div>
 	
 	    <div class="col-div-6">
