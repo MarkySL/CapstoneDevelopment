@@ -19,3 +19,4 @@ toggle.onclick = function() {
     nav_bar.classList.toggle("active");
     main_bar.classList.toggle("active");
 }
+

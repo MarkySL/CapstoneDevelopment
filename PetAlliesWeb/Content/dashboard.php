@@ -61,7 +61,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="../Login_validation/login.php">
                         <span class="icon"><i class="fa-solid fa-right-from-bracket all_icon"></i></span>
                         <span class="title">Logout</span>
                     </a>
