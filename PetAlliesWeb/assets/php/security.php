@@ -1,4 +1,5 @@
 <?php
+/* ------------------ SECURITY PURPOSE ------------------ */
 function validate($data) {
   // Strip unnecessary characters for example extra space, tab, newline from the user input
   $data = trim($data);

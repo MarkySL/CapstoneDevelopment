@@ -1,3 +1,23 @@
+<?php
+/* --------- Including Necessary PHP Files --------*/
+include '../assets/php/connection.php';
+include '../assets/php/security.php';
+
+    if (isset($_POST['registerbtn'])) {
+        $username = validate($_POST['username']);
+        $email = validate($_POST['email']);
+        $password = validate($_POST['password']);
+        $hash_pass = password_hash($password, PASSWORD_DEFAULT);
+
+        
+
+        if (isset($_POST)) {
+            # code...
+        }
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,14 +40,14 @@
                 <!--Username-->
                 <div class="input-box">
                     <span class="icon"><i class="fa-solid fa-user"></i></span>
-                    <input type="text" required>
+                    <input type="text" name="login-user" required>
                     <label>Username</label>
                 </div>
 
                 <!--Password-->
                 <div class="input-box">
                     <span class="icon"><i class="fa-solid fa-lock"></i></span>
-                    <input type="password" required>
+                    <input type="password" name="login-pass" required>
                     <label>Password</label>
                 </div>
 
@@ -37,7 +57,7 @@
                 </div>
 
                 <!--Login Button-->
-                <button type="submit" class="btn">Login</button>
+                <button type="submit" name="loginbtn" class="btn">Login</button>
 
                 <!--Registration-->
                 <div class="registration">
@@ -54,26 +74,26 @@
                 <!-- =================== Username ================ -->
                 <div class="input-box">
                     <span class="icon"><i class="fa-solid fa-user"></i></span>
-                    <input type="text" required>
+                    <input type="text" name="username" required>
                     <label>Username</label>
                 </div>
                 
                 <!-- =================== Email ==================== -->
                 <div class="input-box">
                     <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-                    <input type="email" required>
+                    <input type="email" name="email" required>
                     <label>Email</label>
                 </div>
 
                 <!-- ================= Password ================ -->
                 <div class="input-box">
                     <span class="icon"><i class="fa-solid fa-lock"></i></span>
-                    <input type="password" required>
+                    <input type="password" name="password" required>
                     <label>Password</label>
                 </div>
 
                 <!-- ====== Register Button ========= -->
-                <button type="submit" class="btn">Register</button>
+                <button type="submit" name="registerbtn" class="btn">Register</button>
 
                 <!--Registration-->
                 <div class="registration">
