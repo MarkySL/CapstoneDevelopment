@@ -1,21 +1,32 @@
 <?php
-/* --------- Including Necessary PHP Files --------*/
-include '../assets/php/connection.php';
-include '../assets/php/security.php';
+//Check Database if the data input matches the data in the Database
+/*session_start();
 
-    if (isset($_POST['registerbtn'])) {
-        $username = validate($_POST['username']);
-        $email = validate($_POST['email']);
-        $password = validate($_POST['password']);
-        $hash_pass = password_hash($password, PASSWORD_DEFAULT);
+include 'connection.php';
+include 'validation.php';
 
-        
+    if ($_SERVER["REQUEST_METHOD"]=='POST') 
+    {
+        $login_user = validate($_POST['login-user']);
+        $login_pass = validate($_POST['login-pass']);
 
-        if (isset($_POST)) {
-            # code...
+        $login_sql = "select * from admin where username='".$login_user."' and password='".$login_pass."'";
+
+        $login_result = mysqli_query($con, $login_sql);
+
+        $login_row = mysqli_fetch_array($login_result);
+
+        if (password_verify($login_pass, $storedHashedPassword)) {
+            $_SESSION["username"] = $login_user;
+            header("location: ./Content/dashboard.php");
+            exit;
+        } else {
+            echo "Invalid Username or Password";
+            header("location:login_register.php");
         }
-    }
 
+    }
+*/
 ?>
 
 <!DOCTYPE html>
@@ -36,7 +47,7 @@ include '../assets/php/security.php';
         <div class="form-box login">
             <!--Header-->
             <h2>Login</h2>
-            <form action="#" method="POST">
+            <form action="login_check.php" method="POST">
                 <!--Username-->
                 <div class="input-box">
                     <span class="icon"><i class="fa-solid fa-user"></i></span>

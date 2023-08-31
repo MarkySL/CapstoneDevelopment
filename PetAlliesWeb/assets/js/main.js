@@ -1,3 +1,5 @@
+
+
 // Add Hovered Class to selected list item
 let list = document.querySelectorAll(".nav_bar li");
 

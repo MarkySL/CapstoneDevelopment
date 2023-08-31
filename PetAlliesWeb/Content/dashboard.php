@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS Code-->
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/main-style.css">
     <link rel="shortcut icon" href="../assets/imgs/PetAlliesFavicon.png" type="image/x-icon">
     <title>Admin Dashboard</title>
 
@@ -25,37 +25,37 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="dashboard.php">
                         <span class="icon"><i class="fa-solid fa-house all_icon"></i></span>
                         <span class="title">Dashboard</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="monitoring.php">
                         <span class="icon"><i class="fa-solid fa-heart all_icon"></i></span>
                         <span class="title">Monitoring</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="follow-ups.php">
                         <span class="icon"><i class="fa-solid fa-file-medical all_icon"></i></span>
                         <span class="title">Follow-ups</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="clinic-visits.php">
                         <span class="icon"><i class="fa-solid fa-house-medical-circle-check all_icon"></i></span>
                         <span class="title">Clinic Visits</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="products.php">
                         <span class="icon"><i class="fa-solid fa-warehouse all_icon"></i></span>
                         <span class="title">Products</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="useraccounts.php">
                         <span class="icon"><i class="fa-solid fa-user all_icon"></i></span>
                         <span class="title">User Accounts</span>
                     </a>
@@ -83,7 +83,7 @@
                 </div>
                 <div class="user">
                     <!--Edit this to have a function of upload image-->
-                    <img src="../assets/imgs/Chanel.jpg" alt="No Image">
+                    <img src="../assets/imgs/PetAlliesLogowithBG.png" alt="No Image">
                 </div>
             </div>
         
@@ -206,6 +206,6 @@
     </div>
 
     <!-- =============SCRIPTS============= -->
-    <script src="../assets/js/main.js"></script>
+    <script type="text/javascript" src="../assets/js/main.js" charset="utf-8"></script>
 </body>
 </html>
