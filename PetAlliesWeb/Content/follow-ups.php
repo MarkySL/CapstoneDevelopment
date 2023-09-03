@@ -62,7 +62,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="../Login_validation/login_register.php">
+                    <a href="../Login_validation/logout.php">
                         <span class="icon"><i class="fa-solid fa-right-from-bracket all_icon"></i></span>
                         <span class="title">Logout</span>
                     </a>

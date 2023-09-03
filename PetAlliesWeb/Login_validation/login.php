@@ -16,6 +16,13 @@
         <div class="form-box login">
             <!--Header-->
             <h2>Login</h2>
+
+            <!--Error Message-->
+            <?php
+                if (isset($_GET['error'])) { ?>
+                     <p class="error"><?php echo $_GET['error']; ?></p>      
+            <?php } ?> 
+
             <form action="login_check.php" method="POST">
                 <!--Username-->
                 <div class="input-box">
