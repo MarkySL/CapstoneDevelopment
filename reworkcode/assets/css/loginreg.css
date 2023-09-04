@@ -1,0 +1,142 @@
+/*===========GOOGLE FONTS=============*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/*============= Global CSS ===============*/
+*{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../imgs/vetlogin-landscape.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*==================== Global Form Box Design ===================*/
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: .2s ease;
+}
+
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+}
+
+/* ================ For Login and Register Form Only ============= */
+
+.form-box h2{
+    font-size: 2rem;
+    color: #162938;
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2rem;
+    color: #162938;
+    line-height: 57px;
+}
+
+/*---------------- Forgotten Password ---------------------*/
+.forgotpassword{
+    font-size: .9rem;
+    color: #162938;
+    font-weight: 500;
+    margin: -15px 0 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forgotpassword a{
+    color: #162938;
+    text-decoration: none;
+}
+
+.forgotpassword a:hover{
+    text-decoration: underline;
+}
+
+/*----------------- Login Button ----------------------*/
+.btn{
+    background-image: url('../imgs/BGPetAllies.png');
+    background-size: cover;
+    background-color: transparent;
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #162938;
+    font-weight: 500;  
+}
+
+/*-------------------- Registration Link ------------------*/
+.registration{
+    font-size: .9rem;
+    color: #162938;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.registration p a{
+    color: blue;
+    text-decoration: none;
+   font-weight: 600; 
+}
+
+.registration p a:hover{
+    text-decoration: underline;
+}

@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!--CSS Code-->
     <link rel="stylesheet" href="../assets/css/monitoring-style.css">
     <link rel="shortcut icon" href="../assets/imgs/PetAlliesFavicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
     <title>Admin Dashboard</title>
 
     <!--Fontawesome Scripts Icons-->
@@ -87,9 +91,30 @@
                     <img src="../assets/imgs/PetAlliesLogowithBG.png" alt="No Image">
                 </div>
             </div>
+
+            <div class="bootstrap-container">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Owner</th>
+                            <th>Phone</th>
+                            <th>Address</th>
+                            <th>Pet Name</th>
+                            <th>Birthday</th>
+                            <th>Gender</th>
+                            <th>Species</th>
+                            <th>Breed</th>
+                            <th>C.Markings</th>
+                            <th>Modify</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+
         </div>
     </div>
     <!-- =============SCRIPTS============= -->
-    <script type="text/javascript" src="../assets/js/main.js" charset="utf-8"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>

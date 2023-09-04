@@ -27,15 +27,13 @@
                 <!--Username-->
                 <div class="input-box">
                     <span class="icon"><i class="fa-solid fa-user"></i></span>
-                    <input type="text" name="login-user" required>
-                    <label>Username</label>
+                    <input type="text" name="login-user" placeholder="Enter username">
                 </div>
 
                 <!--Password-->
                 <div class="input-box">
                     <span class="icon"><i class="fa-solid fa-lock"></i></span>
-                    <input type="password" name="login-pass" required>
-                    <label>Password</label>
+                    <input type="password" name="login-pass" placeholder="Enter password">
                 </div>
 
                 <!--Forgotten Password-->
