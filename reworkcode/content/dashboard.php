@@ -1,47 +1,52 @@
-<?php
-session_start();
-
-if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
-  
-
-?>
-
 <!Doctype HTML>
-<html>
+<html lang="en">
 <head>
-	<title></title>
-	<link rel="stylesheet" href="../assets/css/adminstyle.css" type="text/css"/>
-  <!--Boostrap CDN-->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  <!--Latest/Update Kit Fontawesome-->
-  <script src="https://kit.fontawesome.com/acd6544335.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS Code-->
+    <link rel="stylesheet" href="../assets/css/main.css" type="text/css"/>
+
+    <!--Boostrap CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <!--Title-->
+    <title>Admin Dashboard</title>
+
+    <!--Latest/Update Kit Fontawesome Icons-->
+    <script src="https://kit.fontawesome.com/acd6544335.js" crossorigin="anonymous"></script>
 </head>
 
 
 <body>
-	  <div id="mySidenav" class="sidenav">
-      <p class="logo"><span>P</span>et-Allies</p>
-      <a href="admin.php" class="icon-a"><i class="fa fa-dashboard icons"></i> &nbsp;&nbsp;Dashboard</a>
-      <a href="../PetInformation/petinfodisplay.php"class="icon-a"><i class="fa-solid fa-paw icons"></i> &nbsp;&nbsp;Pet Information</a>
-      <a href="../PetMonitoring/monitoring.php"class="icon-a"><i class="fa-solid fa-staff-snake icons"></i> &nbsp;&nbsp;Pet Monitoring</a>
-      <a href="../SalesRep/monthlySR.php"class="icon-a"><i class="fa-solid fa-money-bill icons"></i> &nbsp;&nbsp;Sales Report</a>
-      <a href="../Inventory/inventory.php"class="icon-a"><i class="fa fa-tasks icons"></i> &nbsp;&nbsp;Inventory</a>
-      <a href="../login_validation/logout.php"class="icon-a"><i class="fa fa-user icons"></i> &nbsp;&nbsp;Logout</a>
+	  <div class="sidenav">
+      <p class="logo"><span>P</span>et-Allies <br> Animal Clinic</p>
+
+      <a href="admin.php" class="icon-a"><i class="fa-solid fa-house all_icon"></i> &nbsp;&nbsp;Dashboard</a>
+
+      <a href="../PetInformation/petinfodisplay.php"class="icon-a"><i class="fa-solid fa-heart all_icon"></i> &nbsp;&nbsp;Monitoring</a>
+
+      <a href="../PetMonitoring/monitoring.php"class="icon-a"><i class="fa-solid fa-file-medical all_icon"></i> &nbsp;&nbsp;Follow-ups</a>
+
+      <!--<a href="../SalesRep/monthlySR.php"class="icon-a"><i class="fa-solid fa-money-bill icons"></i> &nbsp;&nbsp;Clinic Visits</a>-->
+
+      <a href="../Inventory/inventory.php"class="icon-a"><i class="fa-solid fa-user all_icon"></i> &nbsp;&nbsp;User Accounts</a>
+
+      <a href="../login_validation/logout.php"class="icon-a"><i class="fa-solid fa-right-from-bracket all_icon"></i> &nbsp;&nbsp;Logout</a>
     </div>
 
-    <div id="main">
+    <div class="main">
 
 	    <div class="head">
 		    <div class="col-div-6">
         <span style="font-size:30px;cursor:pointer; color: white;" class="nav">Dashboard</span>
-        <span style="font-size:30px;cursor:pointer; color: white;" class="nav2">Dashboard</span>
       </div>
 	
 	    <div class="col-div-6">
 	    <div class="profile">
 
-		    <img src="Chanel.jpg" class="pro-img" />
-		    <p>Chanel<span>Pawministrator</span></p>
+		    <img src="../assets/imgs/PetAlliesLogowithBG.png" class="pro-img" />
+		    <p>Administrator</p>
 	    </div>
       <!-- For Navigation Bar Functionalities
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -165,9 +170,3 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
 </body>
 
 </html>
-<?php
-} else {
-  header("location:./login_validation/login.php");
-}
-
-?>

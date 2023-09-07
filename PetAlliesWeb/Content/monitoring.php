@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../assets/css/monitoring-style.css">
     <link rel="shortcut icon" href="../assets/imgs/PetAlliesFavicon.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
 
     <title>Admin Dashboard</title>
 
@@ -78,40 +78,120 @@
                 <div class="toggle">
                     <i class="fa-solid fa-bars"></i>
                 </div>
-                <!--
-                <div class="search">
-                    <label>
-                        <input type="text" placeholder="Search Here">
-                        <i class="fa-solid fa-magnifying-glass search_icon"></i>
-                    </label>
-                </div>
-                -->
                 <div class="user">
                     <!--Edit this to have a function of upload image-->
                     <img src="../assets/imgs/PetAlliesLogowithBG.png" alt="No Image">
                 </div>
             </div>
 
-            <div class="bootstrap-container">
-                <table class="table table-bordered table-striped">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Owner</th>
-                            <th>Phone</th>
-                            <th>Address</th>
-                            <th>Pet Name</th>
-                            <th>Birthday</th>
-                            <th>Gender</th>
-                            <th>Species</th>
-                            <th>Breed</th>
-                            <th>C.Markings</th>
-                            <th>Modify</th>
-                        </tr>
-                    </thead>
-                </table>
-            </div>
+            <div class="monitoring">
+                <div class="table_header">
 
+                    <!-- Table Search Bar -->
+                    <div class="search">
+                        <label>
+                            <input type="text" placeholder="Search Here">
+                            <i class="fa-solid fa-magnifying-glass search_icon"></i>
+                        </label>
+                    </div>
+
+                    <!--Title-->
+                    <div class="table_title">
+                        <h2>Client Information</h2>
+                    </div>
+                    
+                    <!-- Table Add Button-->
+                    <button class="add_btn">
+                        <a href="#">Add Client</a>
+                    </button>
+                </div>
+                <div class="table_body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>id</th>
+                                <th>Owner</th>
+                                <th>Phone</th>
+                                <th>Address</th>
+                                <th>Pet Name</th>
+                                <th>Birthday</th>
+                                <th>Gender</th>
+                                <th>Species</th>
+                                <th>Breed</th>
+                                <th>C.Markings</th>
+                                <th>Modify</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Nheil Orongan</td>
+                                <td>09775667435</td>
+                                <td>Manila,City</td>
+                                <td>Sky</td>
+                                <td>February 13, 2021</td>
+                                <td>Male</td>
+                                <td>Dog</td>
+                                <td>Pomeranian</td>
+                                <td>White/Black</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Nheil Orongan</td>
+                                <td>09775667435</td>
+                                <td>Manila,City</td>
+                                <td>Sky</td>
+                                <td>February 13, 2021</td>
+                                <td>Male</td>
+                                <td>Dog</td>
+                                <td>Pomeranian</td>
+                                <td>White/Black</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Nheil Orongan</td>
+                                <td>09775667435</td>
+                                <td>Manila,City</td>
+                                <td>Sky</td>
+                                <td>February 13, 2021</td>
+                                <td>Male</td>
+                                <td>Dog</td>
+                                <td>Pomeranian</td>
+                                <td>White/Black</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Nheil Orongan</td>
+                                <td>09775667435</td>
+                                <td>Manila,City</td>
+                                <td>Sky</td>
+                                <td>February 13, 2021</td>
+                                <td>Male</td>
+                                <td>Dog</td>
+                                <td>Pomeranian</td>
+                                <td>White/Black</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Nheil Orongan</td>
+                                <td>09775667435</td>
+                                <td>Manila,City</td>
+                                <td>Sky</td>
+                                <td>February 13, 2021</td>
+                                <td>Male</td>
+                                <td>Dog</td>
+                                <td>Pomeranian</td>
+                                <td>White/Black</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
     <!-- =============SCRIPTS============= -->

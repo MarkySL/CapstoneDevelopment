@@ -160,7 +160,9 @@ body{
     width: calc(100% - 300px); /*Syntax for Calc*/
     left: 300px;
     min-height: 100vh;
-    background: var(--white);
+    background-image: url(../imgs/vetlogin-landscape.jpg);
+    background-size: cover;
+    background-position: center;
     transition: 0.5s;
 }
 
@@ -207,6 +209,118 @@ body{
     object-fit: cover;
    
 }
+
+/* ============= DATA TABLE DESIGN ================= */
+
+/* ========= Search Bar Design ========= */
+.search{
+    position: relative;
+    /*width: 200px;
+    margin: 0 10px;*/
+}
+
+.search label{
+    position: relative;
+    width: 100%;
+}
+
+.search label input{
+    width: 100%;
+    height: 30px;
+    border-radius: 40px;
+    padding: 5px 10px;
+    padding-left: 35px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid var(--black2);
+}
+
+.search label .search_icon /*Fontawesome Search Icon Class*/{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 1rem;
+}
+
+/*======== Table Title Design ==========*/
+.table_header .table_title{
+    position: relative;
+    color: var(--blue);
+    font-weight: 800;
+    right: 40px;
+}
+
+/*========= Add Button Design ============*/
+.table_header .add_btn{
+    background: #212185;
+    border-radius: 50px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.add_btn a{
+    text-decoration: none;
+    color: #fff;
+}
+     
+/*============ Table Design =============== */
+.monitoring{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+}
+
+.monitoring .table_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.monitoring .table_body{
+    position: relative;
+    display: grid;
+    min-height: 800px;
+    background: transparent;
+    backdrop-filter: blur(30px);
+    padding: 20px;
+    box-shadow: 0 7px 25px rgb(0, 0, 0, 0.08);
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+} 
+
+/* ============= Table Body Design =========== */
+.table_body table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.table_body table thead th{
+    font-weight: 600;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+.table_body table tr{
+    color: var(--black1);
+    border: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+.table_body table tr:last-child{
+    border-bottom: none;
+}
+
+.table_body table tbody tr:hover{
+    background: var(--gray);
+    color: var(--black1);
+}
+
+.table_body table tr td{
+    padding: 10px;
+    text-align: center;
+}
+
 
 
 /*======= Responsive Design ========*/
