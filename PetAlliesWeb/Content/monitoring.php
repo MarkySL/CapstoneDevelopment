@@ -18,7 +18,6 @@
 </head>
 <body>
     <!--Global-->
-    <span class="overlay">
     <div class="container">
         <!--Navigation Bar-->
         <div class="nav_bar">
@@ -102,7 +101,7 @@
                     </div>
                     
                     <!-- Table Add Button-->
-                    <button class="add_btn" id="add_client">
+                    <button class="add_btn" id="openModalBtn">
                         <a href="#">Add Client</a>
                     </button>
                 </div>
@@ -196,52 +195,54 @@
         </div>
 
         <!-- ================== Modal/Popup Form ============ -->
-        <div class="popup">
-        <div class="close-btn">
-            <i class="fa-solid fa-xmark" class="x_icon"></i>
-        </div>
-            <div class="form">
-                <h2>Client Information</h2>
-                <div class="popup_form">
-                    <label>Owner:</label>
-                    <input type="text" id="owner" name="owner">
-                </div>
-                <div class="popup_form">
-                    <label>Contact#:</label>
-                    <input type="text" id="phone" name="phone">
-                </div>
-                <div class="popup_form">
-                    <label>Address:</label>
-                    <input type="text" id="address" name="address">
-                </div>
-                <div class="popup_form">
-                    <label>Pet Name:</label>
-                    <input type="text" id="pet" name="petname">
-                </div>
-                <div class="popup_form">
-                    <label>Pet Birthday:</label>
-                    <input type="date" id="pet-birth" name="p-bday">
-                </div>
-                <div class="popup_form">
-                    <label>Gender:</label>
-                    <input type="text" id="gender" name="p-gender">
-                </div>
-                <div class="popup_form">
-                    <label>Species:</label>
-                    <input type="text" id="species" name="species">
-                </div>
-                <div class="popup_form">
-                    <label>Breed:</label>
-                    <input type="text" id="breed" name="breed">
-                </div>
-                <div class="popup_form">
-                    <label>Color Markings:</label>
-                    <input type="text" id="o_name" name="colmarks">
-                </div>
-                <div class="popup_form">
-                    <a href="#">
-                        <button>Submit</button>
-                    </a>
+        <div class="backdrop" id="modal">
+            <div class="popup">
+            <div class="close-btn">
+                <i class="fa-solid fa-xmark" class="x_icon" id="closeModalBtn"></i>
+            </div>
+                <div class="form">
+                    <h2>Client Information</h2>
+                    <div class="popup_form">
+                        <label>Owner:</label>
+                        <input type="text" id="owner" name="owner">
+                    </div>
+                    <div class="popup_form">
+                        <label>Contact#:</label>
+                        <input type="text" id="phone" name="phone">
+                    </div>
+                    <div class="popup_form">
+                        <label>Address:</label>
+                        <input type="text" id="address" name="address">
+                    </div>
+                    <div class="popup_form">
+                        <label>Pet Name:</label>
+                        <input type="text" id="pet" name="petname">
+                    </div>
+                    <div class="popup_form">
+                        <label>Pet Birthday:</label>
+                        <input type="date" id="pet-birth" name="p-bday">
+                    </div>
+                    <div class="popup_form">
+                        <label>Gender:</label>
+                        <input type="text" id="gender" name="p-gender">
+                    </div>
+                    <div class="popup_form">
+                        <label>Species:</label>
+                        <input type="text" id="species" name="species">
+                    </div>
+                    <div class="popup_form">
+                        <label>Breed:</label>
+                        <input type="text" id="breed" name="breed">
+                    </div>
+                    <div class="popup_form">
+                        <label>Color Markings:</label>
+                        <input type="text" id="o_name" name="colmarks">
+                    </div>
+                    <div class="popup_form">
+                        <a href="#">
+                            <button>Submit</button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

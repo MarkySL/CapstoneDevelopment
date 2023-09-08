@@ -1,9 +1,30 @@
-//Modal/Popup Form monitoring
 
-document.querySelector("#add_client").addEventListener("click", function(){
-    document.querySelector(".popup").classList.add("active");
+document.addEventListener("DOMContentLoaded", function () {
+// Get the modal and buttons
+var modal = document.getElementById("modal");
+var openModalBtn = document.getElementById("openModalBtn");
+var closeModalBtn = document.getElementById("closeModalBtn");
+
+// Open the modal when the open button is clicked
+openModalBtn.addEventListener("click", function () {
+  modal.style.display = "block";
 });
 
-document.querySelector(".popup .close-btn").addEventListener("click", function(){
-    document.querySelector(".popup").classList.remove("active");
+// Close the modal when the close button is clicked
+closeModalBtn.addEventListener("click", function () {
+  modal.style.display = "none";
+});
+
+// Close the modal if the user clicks outside the modal content
+window.addEventListener("click", function (event) {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
+
+// Prevent the form from submitting for this example
+document.getElementById("myForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  // You can handle form submission here
+});
 });
